@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=0, width=device-width, height=device-height"/>
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="description" content="AJE Official website. Electronic music group from Boston, MA. Elias Jarzombek, Amos Damroth, Jonah Toussaint.">
+  <title>AJE</title>
+  <link rel="stylesheet" href="styles/reset.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="icon" href="img/favicon.png" sizes="16x16" type="image/png"/>
+  <link rel="stylesheet" href="styles/styles_w.css"/>
+</head>
+
+<body>
+  <div id="splash" class="hidden">
+    <a href="#home"><div id="enter-site" class="show-home">Enter Site <i class="fa fa-arrow-right"></i></div></a>
+  </div>
+
+  <div id="fixed-header">
+    <div id="header">
+      <a href="#home" id="aje-splash"><h1 class="title">AJE</h1></a> 
+      <a href="#home" id="aje"><h1 class="title hidden">AJE</h1></a>
+    </div>
+    <div id="top">
+      <div id="play_button">
+        <div id="loading-gif"></div>
+      </div>
+      <div id="playline"></div>
+      <div id="playbar"></div>
+    </div>
+<!--     <div id="show-playlist">
+      <i class="playlist-chevron fa fa-chevron-down"></i>
+      <div id="dblclick-for-playlist"><span class ="white-bckgrnd">Double click for playlist</span></div>
+    </div> -->
+  </div>
+
+  <ul class="media-links">
+    <li class="thumbnail">
+      <a href="https://soundcloud.com/a-j-e" title="Soundcloud" target="blank">
+        <i class="fa fa-soundcloud"></i>
+      </a>
+    </li>
+    <li class="thumbnail">
+      <a href="https://www.facebook.com/pages/AJE-Music/1476560105991085?ref=aymt_homepage_panel" title="Facebook" target="blank">
+        <i class="fa fa-facebook-square"></i>
+      </a>
+    </li>
+    <li class="thumbnail">
+      <a href="https://twitter.com/AJE_music" title="Twitter" target="blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li class="thumbnail">
+      <a href="http://instagram.com/aje_music" title="Instagram" target="blank">
+        <i class="fa fa-instagram"></i>
+      </a>
+    </li>
+    <li class="thumbnail">
+      <a href="https://www.youtube.com/channel/UC6VZ9Pw4iDWjiFo8whTs-TA" title="YouTube" target="blank">
+        <i class="fa fa-youtube-play"></i>
+      </a>
+    </li>
+
+  </ul>
+
+  <div id="content" class="hidden">
+    <nav>
+      <ul class="tabs">
+        <li class="nav-link"><a id="releases_link" href="#releases">Releases</a></li>
+        <li class="nav-link"><a id="videos_link" href="#videos">Videos</a></li>
+        <li class="nav-link"><a id="info_link" href="#info">Info</a></li>
+      </ul>
+    </nav>
+
+    <div id="dynamic-content">
+      <div id="home_hash" class="hidden">
+        <div class="album-view">
+        <img class="coverart" src="img/art/lp2_cover.png"/>
+          <div class="album-info">
+            <h1>ONE MOVE</h1><br/><span>8/21/15</span>
+            <div class="divider long"></div>
+             <p>1. Dmmy Down<br>2. Alive Inside<br>3. Golden Ram<br>4. Master Splinter<br>5. Hurrikane<br>6. Trident<br>7. Tuscan Bread<br>8. Turf<br>9. We Don't Deal In Crustaceans<br>10. Rehearsal<br>11. Triple Kill</p>  
+            <div class="divider long"></div>
+            <div class="listen-dl">             
+              <a class="listen" title="Play" link="https://soundcloud.com/a-j-e/sets/one-move"><i class="fa fa-play"></i></a>
+              <a class="download" title="Download" href="https://freelemonade.bandcamp.com/album/one-move" target="blank"><img src="img/dl_icon_small.png"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="videos_hash" class="hidden">
+        <iframe class="video" width="710" height="400" src="https://www.youtube.com/embed/6JuzuQ-FSos" frameborder="0" allowfullscreen></iframe>
+        <iframe class="video" width="710" height="400" src="https://www.youtube.com/embed/I5Z0Bnr28Kc" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div id="releases_hash" class="hidden">
+        <ul id="release-list" class="tabs">
+          <li><h1>LP</h1></li>
+           <li><p><span class="date">08/21/15</span>
+            <a class="album-link" href="#one-move">One Move</a></p>
+          </li>
+           <li><p><span class="date">12/24/14</span>
+            <a class="album-link" href="#the-jolly-holiday-beats">The Jolly Holiday Beats</a></p>
+          </li>
+          <li>
+          <p><span class="date">08/24/13</span>
+            <a class="album-link" href="#from-the-barn">From The Barn</a></p>
+          </li>
+          <div class="divider long"></div>
+
+           <li><h1>EP</h1></li>
+          <li>
+          <p><span class="date">06/13/15</span>
+            <a class="album-link" href="#crab-man">Crab Man</a></p>
+          </li>
+          <li>
+          <p><span class="date">07/24/14</span>
+            <a class="album-link" href="#the-locked-room">The Locked Room</a></p>
+          </li>
+          <div class="divider long"></div>
+
+          <li><h1>REMIX</h1></li>
+          <li><p><span class="date">05/02/15</span>
+          <a class="album-link" href="#huarache-lights-remix">Hot Chip - Huarache Lights (AJE's Huarache Flights Remix)</a></p></li>
+          <li><p><span class="date">11/20/14</span>
+          <a class="album-link" href="#coulda-been-my-love-remix">Foxygen - Coulda Been My Love (AJE's Deep Dish Dance Remix)</a></p></li>
+          <li><p><span class="date">08/24/14</span>
+          <a class="album-link" href="#the-eraser-remix">Thom Yorke - The Eraser (AJE Trap Remix)</a></p></li>
+          <li><p><span class="date">02/14/14</span>
+          <a class="album-link" href="#total-eclipse-of-the-heart-remix">Bonnie Tyler - Total Eclipse of the Heart (AJE Trap Remix)</a></p></li>
+          <li><p><span class="date">04/29/13</span>
+          <a class="album-link" href="#organized-chaos">Organized Chaos (Burial X Zomby X Ryuichi Sakamoto) [BOOTLEG/REMIX/EDIT]</a></p></li>
+          <li><p><span class="date">03/25/13</span>
+          <a class="album-link" href="#glass-remix">Bat For Lashes - Glass (AJE Remix)</a></p></li>
+          <li><p><span class="date">03/20/13</span>
+          <a class="album-link" href="#good-man-remix">Erin Barra - Good Man (AJE Remix)</a></p></li>
+        </ul>
+      </div>       
+
+      <div id="info_hash" class="hidden">
+        <div id="info-text">
+          <p class="info-copy">AJE is Elias Jarzombek, Amos Damroth, Jonah Toussaint<br><br><a href="mailto:a.j.e.bmc@gmail.com">
+          a.j.e.bmc@gmail.com</a></p>
+          <div class="divider long"></div>
+          <p class="small">&#169; AJE 2015</p>
+        </div>
+      </div>
+
+  <!-- ///////////////////// -->
+
+      <div id="one-move_hash" class="hidden">
+        <div class="album-view">
+        <img class="coverart" src="img/art/lp2_cover.png"/>
+          <div class="album-info">
+            <h1>ONE MOVE</h1><br/><span>8/21/15</span>
+            <div class="divider long"></div>
+             <p>1. Dmmy Down<br>2. Alive Inside<br>3. Golden Ram<br>4. Master Splinter<br>5. Hurrikane<br>6. Trident<br>7. Tuscan Bread<br>8. Turf<br>9. We Don't Deal In Crustaceans<br>10. Rehearsal<br>11. Triple Kill</p>  
+            <div class="divider long"></div>
+            <div class="listen-dl">             
+              <a class="listen" title="Play" link="https://soundcloud.com/a-j-e/sets/one-move"><i class="fa fa-play"></i></a>
+              <a class="download" title="Download" href="https://freelemonade.bandcamp.com/album/one-move" target="blank"><img src="img/dl_icon_small.png"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="the-jolly-holiday-beats_hash" class="hidden">
+        <img class="coverart" src="img/art/jolly-holliday.png">
+        <div class="album-info">
+          <h1>THE JOLLY HOLIDAY BEATS</h1><br><span>12/24/14</span>
+          <div class="divider long"></div>
+          <p>1. Hear the Bells<br>2. God Rest<br>3. Lovely Weather<br>4. Know Its Christmas<br>5. Holly<br>6. Of Hills and Sleigh<br>7. Frosty<br>8. Hark<br></p> 
+          <div class="divider long"></div>
+          <div class="listen-dl">
+            <a class="listen" title="Play" link="https://soundcloud.com/a-j-e/sets/the-jolly-holiday-beats"><i class="fa fa-play"></i></a>
+            <a class="download" title="Download" href="https://freelemonade.bandcamp.com/album/the-jolly-holiday-beats" target="blank"><img src="img/dl_icon_small.png"></a>
+          </div>
+        </div>
+      </div>
+
+      <div id="from-the-barn_hash" class="hidden">
+        <img class="coverart" src="img/art/from-the-barn.png">
+        <div class="album-info">
+          <h1>FROM THE BARN</h1><br><span>8/24/13</span>
+          <div class="divider long"></div>
+          <p>1. Manifest<br>2. Upwards<br>3. Unknown (feat. Ada Obieshi)<br>4. Onlook<br>5. Hard Work<br>6. Recall<br>7. Dream On<br>8. Only If Convenient<br>9. Nostos<br>10. Konstruct<br>11. Downwards // This Will Go In The Box</p>    
+          <div class="divider long"></div>
+          <div class="listen-dl"> 
+            <a class="listen" title="Play" link="https://soundcloud.com/a-j-e/sets/from-the-barn"><i class="fa fa-play"></i></a>
+            <a class="download" title="Download" href="https://freelemonade.bandcamp.com/album/from-the-barn" target="blank"><img src="img/dl_icon_small.png"></a>
+          </div>
+        </div>
+      </div>
+
+      <div id="crab-man_hash" class="hidden">
+        <img class="coverart" src="img/art/crab-man.png">
+        <div class="album-info">
+          <h1>CRAB MAN - EP</h1><br><span>6/13/15</span>
+          <div class="divider long"></div>
+          <p>1. Sepia<br>2. Girl Day<br>3. Murk<br>4. Farmer's Tan</p>
+          <div class="divider long"></div>
+          <div class="listen-dl">
+            <a class="listen" title="Play" link="https://soundcloud.com/a-j-e/sets/crab-man"><i class="fa fa-play"></i></a>
+            <a class="download" title="Download" href="https://freelemonade.bandcamp.com/album/crab-man" target="blank"><img src="img/dl_icon_small.png"></a>
+          </div>
+        </div>
+      </div>
+
+      <div id="the-locked-room_hash" class="hidden">
+        <img class="coverart" src="img/art/locked-room.png">
+        <div class="album-info">
+          <h1>THE LOCKED ROOM - EP</h1><br><span>6/13/15</span>
+          <div class="divider long"></div>
+          <p>1. The Locked Room<br>2. Keep It<br>3. You Blinked</p>
+          <div class="divider long"></div>
+          <div class="listen-dl">
+            <a class="listen" title="Play" link="https://soundcloud.com/a-j-e/sets/the-locked-room-ep"><i class="fa fa-play"></i></a>
+            <a class="download" title="Download" href="https://freelemonade.bandcamp.com/album/the-locked-room-ep" target="blank"><img src="img/dl_icon_small.png"></a>
+          </div>
+        </div>
+      </div>
+
+      <div id="huarache-lights-remix_hash" class="hidden">
+        <img class="coverart" src="img/art/huarache-lights.png">
+        <div class="album-info">
+          <h1>HUARACHE FLIGHTS</h1><br><span>05/02/15</span>
+          <div class="divider long"></div>
+          <p>Hot Chip - Huarache Lights (AJE's Huarache Flights Remix)</p>
+          <div class="divider long"></div>
+          <div class="listen-dl">
+            <a class="listen stratus" href="https://soundcloud.com/a-j-e/hot-chip-huarache-lights-ajes-huarache-flights-remix"><i class="fa fa-play"></i></a>
+            <a class="download" title="Download" href="https://freelemonade.bandcamp.com/album/remixes" target="blank"><img src="img/dl_icon_small.png"></a>
+          </div>
+        </div>
+      </div>
+
+      <div id="coulda-been-my-love-remix_hash" class="hidden">
+        <img class="coverart" src="img/art/coulda-been.png">
+        <div class="album-info">
+          <h1>COULDA BEEN MY LOVE</h1><br><span>11/20/14</span>
+          <div class="divider long"></div>
+          <p>Foxygen - Coulda Been My Love (AJE's Deep Dish Dance Remix)</p>
+          <div class="divider long"></div>
+          <div class="listen-dl">
+            <a class="listen stratus" href="https://soundcloud.com/a-j-e/foxygen-coulda-been-my-love-ajes-deep-dish-dance-remix"><i class="fa fa-play"></i></a>
+            <a class="download" title="Download" href="https://freelemonade.bandcamp.com/album/remixes" target="blank"><img src="img/dl_icon_small.png"></a>
+          </div>
+        </div>
+      </div>
+
+      <div id="the-eraser-remix_hash" class="hidden">
+        <img class="coverart" src="img/art/eraser.png">
+        <div class="album-info">
+          <h1>THE ERASER</h1><br><span>8/24/14</span>
+          <div class="divider long"></div>
+          <p>Thom Yorke - The Eraser (AJE Trap Remix)</p>
+          <div class="divider long"></div>
+          <div class="listen-dl">
+            <a class="listen stratus" href="https://soundcloud.com/a-j-e/the-eraser-thom-yorke-aje-remix"><i class="fa fa-play"></i></a>
+            <a class="download" title="Download" href="https://freelemonade.bandcamp.com/album/remixes" target="blank"><img src="img/dl_icon_small.png"></a>
+          </div>
+        </div>
+      </div>
+
+      <div id="total-eclipse-of-the-heart-remix_hash" class="hidden">
+        <img class="coverart" src="img/art/total-eclipse.png">
+        <div class="album-info">
+          <h1>TOTAL ECLIPSE</h1><br><span>2/14/14</span>
+          <div class="divider long"></div>
+          <p>Bonnie Tyler - Total Eclipse of the Heart (AJE Trap Remix)</p>
+          <div class="divider long"></div>
+          <div class="listen-dl">
+            <a class="listen" title="Play" href="https://freelemonade.bandcamp.com/track/bonnie-tyler-total-eclipse-of-the-heart-aje-trap-remix" target="blank"><i class="fa fa-play"></i></a>
+            <a class="download" title="Download" href="https://freelemonade.bandcamp.com/album/remixes" target="blank"><img src="img/dl_icon_small.png"></a>
+          </div>
+        </div>
+      </div>
+
+      <div id="organized-chaos_hash" class="hidden">
+        <img class="coverart" src="img/art/organized-chaos.png">
+        <div class="album-info">
+          <h1>ORGANIZED CHAOS</h1><br><span>4/29/13</span>
+          <div class="divider long"></div>
+          <p>Organized Chaos (Burial X Zomby X Ryuichi Sakamoto) [BOOTLEG/REMIX/EDIT]</p>
+          <div class="divider long"></div>
+          <div class="listen-dl">
+            <a class="listen stratus" href="https://soundcloud.com/a-j-e/organized-chaos-burial-x-zomby-x-ryuichi-sakamoto-bootlegmashupedit"><i class="fa fa-play"></i></a>
+            <a class="download" title="Download" href="https://freelemonade.bandcamp.com/album/remixes" target="blank"><img src="img/dl_icon_small.png"></a>
+          </div>
+        </div>
+      </div>
+      
+      <div id="glass-remix_hash" class="hidden">
+        <img class="coverart" src="img/art/glass.png">
+        <div class="album-info">
+          <h1>GLASS (AJE REMIX)</h1><br><span>3/20/13</span>
+          <div class="divider long"></div>
+          <p>Bat For Lashes - Glass (AJE Remix)</p>
+          <div class="divider long"></div>
+          <div class="listen-dl">
+            <a class="listen stratus" href="https://soundcloud.com/a-j-e/glass-aje-remix"><i class="fa fa-play"></i></a>
+            <a class="download" title="Download" href="https://freelemonade.bandcamp.com/album/remixes" target="blank"><img src="img/dl_icon_small.png"></a>
+          </div>
+        </div>
+      </div>
+
+      <div id="good-man-remix_hash" class="hidden">
+        <img class="coverart" src="img/art/good-man.png">
+        <div class="album-info">
+          <h1>GOOD MAN (AJE REMIX)</h1><br><span>3/20/13</span>
+          <div class="divider long"></div>
+          <p>Erin Barra - Good Man (AJE Remix)</p>
+          <div class="divider long"></div>
+          <div class="listen-dl">
+            <a class="listen stratus" href="https://soundcloud.com/a-j-e/good-man-erin-barra-a-j-e"><i class="fa fa-play"></i></a>
+            <a class="download" title="Download" href="https://freelemonade.bandcamp.com/album/remixes" target="blank"><img src="img/dl_icon_small.png"></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div id="push" class="hidden"></div>
+    <div id="footer" class="hidden">
+      <ul>
+        <li class="thumbnail">
+          <a href="https://soundcloud.com/a-j-e" target="blank"><i class="fa fa-soundcloud"></i></a>
+        </li>
+        <li class="thumbnail">
+          <a href="https://www.facebook.com/pages/AJE-Music/1476560105991085?ref=aymt_homepage_panel" target="blank"><i class="fa fa-facebook-square"></i></a>
+        </li>
+        <li class="thumbnail">
+          <a href="https://twitter.com/AJE_music" target="blank"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li class="thumbnail">
+          <a href="http://instagram.com/aje_music" target="blank"><i class="fa fa-instagram"></i></a>
+        </li>
+        <li class="thumbnail">
+          <a href="https://www.youtube.com/channel/UC6VZ9Pw4iDWjiFo8whTs-TA" target="blank"><i class="fa fa-youtube-play"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-66075702-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script type="text/javascript" src="scripts/jquery1.7.2.min.js"></script>
+  <script type="text/javascript" src="https://stratus.soundcloud.com/stratus.js"></script>
+<!--   <script type="text/javascript" src="http://stratus.sc/stratus.js"></script>
+ -->  <script type="text/javascript" src="scripts/jquery.ba-bbq.min.js"></script>
+  <script type="text/javascript" src="scripts/scripts.js"></script>
+  <script type="text/javascript" src="scripts/tabs.js"></script>
+</body>
+</html>
